@@ -18,7 +18,7 @@
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
         <!--WebPage title-->
-        <title>Home Page</title>
+        <title>Work Page</title>
     </head>
 
     <!--This section holds the content of the page-->
@@ -40,63 +40,63 @@
                 </nav>
             </header>
         
-            <!--About me container with profile image and text-->
+            <!--Work container with summary and a table of previous jobs-->
             <div class="row">
                 <div class="col-md-8 col-md-offset-1">
-                    <section id="aboutMe" class="ml-3">
-                        <h3>About Me</h3>
-                        <img src="ShaneWeb.jpg" class="rounded float-left mr-3" alt="Lynn Photo">
-                        <p>
-                            Welcome to my page!  I am currently in college seeking my degree, and I have three classes left!  I went back to school to get this degree because
-                            I realized my love of technology and programming, and I am excited for the career prospects that this field can provide.  I have learned much over
-                            my degree, and I have decided that I enjoy C# and Web programming the most!  As mid-life career changer, this academic learning pace can be a challenge
-                            since the time demands increase as you get older.  Most is due to responsibilities, but we have so much that asks for our time these days!
-                        </p>
-                        
-                        <p>Job search wise, the world is vastly different than when I got my previous job about sixteen years ago.  Back then, it was craft a nice resume on paper 
-                            and deliver it to the office you want to work at.  Today, not only do you have to craft a short and sweet resume that can be read by an automated system.
-                            But, you also need to update social media platforms, and create an account with every company you want to apply for.  Plus those resumes better be custom
-                            designed to fit where you want to go!
-                        </p>
+                    <div>
+                        <section id="work">
+                            <h3>My Work Experience</h3>
+                            <p>I have been in the workforce for over twenty years now, and my last job was held for over 16 of
+                                those years. Unfortunately, the pandemic took its toll and I was a part of the latest round of
+                                layoffs. I held three positions in the company which I have listed below, and I enjoyed my time
+                                there. However, the layoff proved benficial because I was already taking classes to career change
+                                into the tech world. So, I see this as my opportunity to move into a career that I love for the
+                                next career jouney in my life.
+                            </p>
+                            
+                            <h5>Previous List Format (Ordered List)</h5>
+                            <ol>
+                                <li>Workforce Specialist</li>
+                                <li>Claims Document Processor</li>
+                                <li>Imaging Processor I/II</li>
+                            </ol>
 
-                        <p>Thanks for reading this far, as this is my first web page in awhile!  When I am not in school, I enjoy the finer things in life that allow you to detach
-                            and get away from the world.  I enjoy reading and watching movies/tv shows and the occasional video game when the mood hits.  I like being outdoors, and
-                            when the pandemic is finally over, I will get back into my previous martial arts training pattern to get out in nature and maybe lose a little weight in
-                            the process!
-                        </p>
-                    </section>
-                
-
-                    <!--Contact Section form control-->
-
-                    <section id="contactMe" class="ml-6">
-                        <h3>Contact Me <i class="fa fa-envelope"></i></h3>
-                        <form action="#" class="form-inline ml-3">
-                            <div class="form-group">
-                                <label class="mr-1">Enter your name: </label> 
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label class="mr-1 ml-1">Select a topic:</label>
-                                    <select class="form-control">
-                                        <option>Make Friends</option>
-                                        <option>Intend to Hire</option>
-                                        <option>Like Your Page</option>
-                                        <option>Someone You Know</option>
-                                    </select>
-                            </div>
-                            <div class="form-group">
-                                <label class="mr-1 ml-1">Type Your Message:</label>
-                                <textarea class="form-control"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" class="btn btn-primary ml-2" value="Send">
-                                <input type="reset" class="btn btn-warning ml-2" value="Clear">
-                            </div>
-                        </form>
-                    </section>
+                            <!--Added this section as a table from above (Job Title, Compnay, Location, Years of Service)-->
+                            <h5>New List Format (Table)</h5>
+                            <table class="table table-sm align-middle table-hover table-bordered table-striped">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Job Title</th>
+                                    <th scope="col">Company</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Service Date</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Workforce Specialist</th>
+                                    <td>State Farm Insurance</td>
+                                    <td>Bloomington, IL</td>
+                                    <td>2010-2021</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Claims Document Processor</th>
+                                    <td>State Farm Insurance</td>
+                                    <td>Columbia, MO</td>
+                                    <td>2008-2010</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Imaging Processor I/II</th>
+                                    <td>State Farm Insurance</td>
+                                    <td>Columbia, MO</td>
+                                    <td>2004-2008</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </section>
+                    </div>
                 </div>
-            
+
         
                 <!--Aside container with misc. information-->
                 <div class="col-md-2">
@@ -124,5 +124,5 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         </div>
-    </body>
+     </body>
 </html>

@@ -2,81 +2,131 @@
 <!--
     Christopher Lynn
     CISS 298 Web Programming
-    5/27/2021
-    Programming Assignment 4 - MySQL
+    6/4/2021
+    Programming Assignment 5 - Bootstrap
 -->
 
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <title>Education Page</title>
-</head>
-<body>
-    <header>
-        <h1>Christopher Shane Lynn</h1>
-        <h2>What you believe becomes true for you!</h2>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="work.php">Work</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div>
-        <section id="summary">
-            <h3>My Education</h3>
-            <p>I have spent quite a bit of time pursuing education.  I love to learn, but I finished my Bachelor's degree
-                in Psychology in 2012 and thought I was done.  Well, almost 10 years later, I went back to school for more
-                fun and started in my current degree in Computer Info Systems.  Psychology was fun, but I was not landing the
-                work that interested me and it was a toss-up between computers and psychology the first time.  I want to share
-                three awesome schools I have attended over the years.
-            </p>
-        </section>
-        <section id="school1">
-            <img alt="Columbia College Photo" src="CC.jpg">
-            <p>My current home away from home.  Columbia College gave me the start I needed when I first went back to college
-                many years after I graduated from high school.  I am only listing this school once even though I am getting two
-                degrees here to save space and to be able to showcase the others.  The main campus is located in Columbia, MO and they offer small
-                class sizes of around 20 students.  This was a large deciding factor to go here for the extra support the instructors
-                can provide to the students.  They offer financing, many degrees, and online options.
-            </p>
-        </section>
-        <section id="school2">
-            <img alt="Rock Bridge High School Photo" src="RBHS.jpg">
-            <p>My high school of choice for the Columbia area, I have many great memories from this school.  I went here in the late
-                1990's, and so much has changed since then.  But, this public high school offers a great education with the core philosophy
-                of freedom with responsiblity.  The course structure here is flexibile and sets up students for a college feel in determining
-                your classes of interest while meeting the credits needed to graduate.  One of its most defining features is the inclusion of
-                a planetarium on the grounds that is open to school trips but also to the public once or twice a month.
-            </p>
-        </section>
-        <section id="school3">
-            <img alt="Rock Bridge Elementary Photo" src="RBES.gif">
-            <p>My elementary school has changed much over the years, but not enough to not be unfamiliar.  This school prides itself in its
-                support and development of the students.  And it has a guided philosophy similar to RBHS, but structured enough to keep
-                the children on task.  This public school provides a good education, and it is tucked away at the edge of Rock Bridge State Park
-                so it provides a focused environment for kids with no distractions around them.  One neat feature of this school is the photographs
-                they take of all graduating classes that they display all around the school.  When I went back there to visit while my son attended,
-                I was able to see myself and my graduating class over 15 years ago at the time.  
-            </p>
-        </section>
-    </div>
-    <aside id="amazon">
-        <h4>Check out amazon.com</h4>
-        <p>Prime members get free shipping and videos!</p>
-    </aside>
-    <aside id="bn">
-        <h4>Books available at bn.com</h4>
-        <p>B&amp;N Members, stop in for store discounts and get free shipping online</p>
-    </aside>
-    <footer>
-        <p>
-            COPYRIGHT&copy; 2021 | Christopher S. Lynn | E-mail me at: cslynn1@cougars.ccis.edu | <a href="https://www.linkedin.com/in/christopher-shane-lynn/"><img id="LInIcon" alt="LinkedIn Icon" src="Linkedin_Shiny_Icon_Web.jpg"></a>
-        </p>
-    </footer>
+    <head>
+        <!--Required Meta Tags-->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+        <!--Required for Bootstrap CSS to work-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--Required to use the icons from Font Awesome-->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-</body>
+        <!--WebPage title-->
+        <title>Education Page</title>
+    </head>
+
+    <!--This section holds the content of the page-->
+    <body>
+        <!--Navigation Bar container in the header-->
+        <div class="container-fluid">
+            <header class="text-center bg-warning">
+                <h1>Christopher Shane Lynn</h1>
+                <h2>What you believe becomes true for you!</h2>
+                <nav class="navbar navbar-expand-lg navbar-light bg-success rounded">
+                    <button class="navbar-toggler" type="button" data-target="#mynavigation" data-toggle="collapse" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="mynavigation">
+                        <ul class="navbar-nav w-100 nav-justified mx-auto">
+                            <li class="nav-item active"><a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item active"><a class="nav-link" href="education.html">Education</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="work.html">Work</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        
+            <!--Education container with school images and text-->
+            <div class="row">
+                <div class="col-md-8 col-md-offset-1">
+                    <section id="summary">
+                        <h3>My Education</h3>
+                        <p>I have spent quite a bit of time pursuing education. I love to learn, but I finished my Bachelor's degree
+                            in Psychology in 2012 and thought I was done. Well, almost 10 years later, I went back to school for
+                            more
+                            fun and started in my current degree in Computer Info Systems. Psychology was fun, but I was not landing
+                            the
+                            work that interested me and it was a toss-up between computers and psychology the first time. I want to
+                            share
+                            three awesome schools I have attended over the years.
+                        </p>
+                    </section>
+
+                    <section id="school1" style="min-height: 60px">
+                        <img src="CC.jpg" class="contact pull-left mr-3" alt="Columbia College Photo" >
+                        <p>My current home away from home. Columbia College gave me the start I needed when I first went back to
+                            college
+                            many years after I graduated from high school. I am only listing this school once even though I am
+                            getting two
+                            degrees here to save space and to be able to showcase the others. The main campus is located in
+                            Columbia, MO and they offer small
+                            class sizes of around 20 students. This was a large deciding factor to go here for the extra support the
+                            instructors
+                            can provide to the students. They offer financing, many degrees, and online options.
+                        </p>
+                    </section>
+
+                    <section id="school2">
+                        <img src="RBHS.jpg" class="contact pull-left mr-3 mt-2" alt="Rock Bridge High School Photo">
+                        <p>My high school of choice for the Columbia area, I have many great memories from this school. I went here
+                            in the late
+                            1990's, and so much has changed since then. But, this public high school offers a great education with
+                            the core philosophy
+                            of freedom with responsiblity. The course structure here is flexibile and sets up students for a college
+                            feel in determining
+                            your classes of interest while meeting the credits needed to graduate. One of its most defining features
+                            is the inclusion of
+                            a planetarium on the grounds that is open to school trips but also to the public once or twice a month.
+                        </p>
+                    </section>
+
+                    <section id="school3">
+                        <img src="RBES.gif" class="contact pull-left mr-3" alt="Rock Bridge Elementary Photo">
+                        <p>My elementary school has changed much over the years, but not enough to not be unfamiliar. This school
+                            prides itself in its
+                            support and development of the students. And it has a guided philosophy similar to RBHS, but structured
+                            enough to keep
+                            the children on task. This public school provides a good education, and it is tucked away at the edge of
+                            Rock Bridge State Park
+                            so it provides a focused environment for kids with no distractions around them. One neat feature of this
+                            school is the photographs
+                            they take of all graduating classes that they display all around the school. When I went back there to
+                            visit while my son attended,
+                            I was able to see myself and my graduating class over 15 years ago at the time.
+                        </p>
+                    </section>
+                </div>
+
+        
+                <!--Aside container with misc. information-->
+                <div class="col-md-2">
+                    <aside id="amazon" class="bg-dark text-white mt-3">
+                        <h4>Check out amazon.com</h4>
+                        <p>Prime members get free shipping and videos!</p>
+                    </aside>
+                    
+                    <aside id="bn" class="bg-dark text-white">
+                        <h4>Books available at bn.com</h4>
+                        <p>B&amp;N Members, stop in for store discounts and get free shipping online</p>
+                    </aside>
+                </div>
+            </div>
+            
+            <!--Footer container-->
+            <footer class="text-center bg-light mt-2">
+                <p>
+                    COPYRIGHT&copy; 2021 | Christopher S. Lynn | <a href="https://www.linkedin.com/in/christopher-shane-lynn/"><img id="LInIcon" alt="LinkedIn Icon" src="Linkedin_Shiny_Icon_Web.jpg"></a>  
+                </p>
+            </footer>
+
+            <!--Bootstrap JavaScript Code: Optional but order is 1. jQuery 2. Popper.js 3. Bootstrap JS-->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </div>
+    </body>
 </html>
